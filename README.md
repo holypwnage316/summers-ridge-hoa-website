@@ -7,6 +7,8 @@ It is ready to deploy from the repository root on Netlify.
 ## Features
 
 - Responsive homepage with announcements, resources, community links, dues information, and contact details
+- Dedicated annual HOA dues invoice page
+- Dedicated Building Control Committee page for exterior change requests
 - Dedicated FAQ page with common HOA questions and answers
 - Building Control Committee links for the Google request form and committee email
 - Invite-only Facebook group link
@@ -16,7 +18,10 @@ It is ready to deploy from the repository root on Netlify.
 ## Files
 
 - `index.html` - Main website page
+- `dues.html` - Annual HOA dues invoice and payment page
+- `bcc.html` - Building Control Committee request page
 - `faq.html` - Frequently asked questions page
+- `minutes.html` - Meeting minutes and board records page
 - `styles.css` - Custom site styling
 - `script.js` - Small interactive behavior
 - `thank-you.html` - Netlify form success page
