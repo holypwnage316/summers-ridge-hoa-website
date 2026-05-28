@@ -21,7 +21,7 @@ It is ready to deploy from the repository root on Netlify.
 - `dues.html` - Annual HOA dues invoice and payment page
 - `bcc.html` - Building Control Committee request page
 - `faq.html` - Frequently asked questions page
-- `minutes.html` - Meeting minutes and board records page
+- Meeting minutes are linked from the homepage resources section to the HOA Google Drive folder
 - `styles.css` - Custom site styling
 - `script.js` - Small interactive behavior
 - `thank-you.html` - Netlify form success page
