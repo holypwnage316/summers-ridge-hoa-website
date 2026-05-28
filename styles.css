@@ -228,40 +228,68 @@ a {
   overflow: hidden;
 }
 
-.announcement-item {
-  background: #fff;
+.announcement-list .accordion-item {
+  border: 0;
   border-bottom: 1px solid var(--sr-line);
-  display: grid;
-  gap: 22px;
-  grid-template-columns: 74px 1fr;
-  padding: 28px;
 }
 
-.announcement-item:last-child {
+.announcement-list .accordion-item:last-child {
   border-bottom: 0;
 }
 
-.announcement-item h3 {
-  font-size: 1.45rem;
-  font-weight: 750;
-  margin-bottom: 10px;
+.announcement-button {
+  align-items: center;
+  background: #fff;
+  color: var(--sr-ink);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 90px 1fr;
+  padding: 24px 28px;
 }
 
-.announcement-item p:not(.eyebrow) {
+.announcement-button:not(.collapsed) {
+  background: var(--sr-soft);
+  box-shadow: none;
+  color: var(--sr-ink);
+}
+
+.announcement-button:focus {
+  border-color: var(--sr-green);
+  box-shadow: 0 0 0 0.25rem rgba(47, 111, 78, 0.18);
+}
+
+.announcement-summary {
+  display: grid;
+  gap: 6px;
+  padding-right: 18px;
+  text-align: left;
+}
+
+.announcement-title {
+  color: var(--sr-ink);
+  font-size: 1.25rem;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.announcement-preview {
+  color: var(--sr-muted);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.announcement-body {
+  padding: 4px 28px 30px 140px;
+}
+
+.announcement-body p {
   color: var(--sr-muted);
 }
 
-.announcement-item a {
+.announcement-body a {
   font-weight: 700;
   text-decoration: none;
-}
-
-.announcement-item-featured {
-  grid-template-columns: 90px 1fr;
-}
-
-.announcement-item-featured p:not(.eyebrow) {
-  margin-bottom: 1rem;
 }
 
 .announcement-signoff {
@@ -272,7 +300,7 @@ a {
 
 .announcement-date {
   align-items: center;
-  background: var(--sr-soft);
+  background: #fff;
   border-left: 4px solid var(--sr-gold);
   border-radius: 8px;
   display: flex;
@@ -280,6 +308,10 @@ a {
   justify-content: center;
   min-height: 74px;
   text-align: center;
+}
+
+.announcement-button:not(.collapsed) .announcement-date {
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .announcement-date span {
@@ -638,8 +670,18 @@ textarea.form-control {
     display: none;
   }
 
-  .announcement-item {
+  .announcement-button {
+    gap: 14px;
     grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .announcement-summary {
+    padding-right: 0;
+  }
+
+  .announcement-body {
+    padding: 0 20px 24px;
   }
 
   .announcement-date {
