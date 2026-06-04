@@ -153,10 +153,7 @@ a {
 }
 
 .share-heading {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: block;
 }
 
 .section-link {
@@ -166,6 +163,7 @@ a {
   display: inline-flex;
   font-size: 0.62em;
   line-height: 1;
+  margin-left: 10px;
   opacity: 0.72;
   position: relative;
   text-decoration: none;
